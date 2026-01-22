@@ -1,1 +1,66 @@
-<h1> Bem vindo ao site</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minha Família</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS custom -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="min-h-screen text-white overflow-x-hidden">
+
+  <!-- Background animado -->
+  <div class="animated-bg"></div>
+
+  <main class="relative z-10 px-6 py-20 max-w-7xl mx-auto">
+
+    <h1 class="text-4xl md:text-6xl font-bold text-center mb-6">
+      Minha Família ❤️
+    </h1>
+
+    <p class="text-center text-lg text-white/80 max-w-2xl mx-auto mb-16">
+      Um cantinho especial pra guardar histórias, fotos e lembranças das pessoas mais importantes da minha vida.
+    </p>
+
+    <!-- Cards -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+      <!-- CARD -->
+      <a href="pessoas/mae.html"
+         class="family-card"
+         data-aos="fade-up">
+        <img src="img/pessoas/mae.jpg" alt="Mãe">
+        <span>Mãe</span>
+      </a>
+
+      <a href="pessoas/pai.html"
+         class="family-card"
+         data-aos="fade-up" data-aos-delay="100">
+        <img src="img/pessoas/pai.jpg" alt="Pai">
+        <span>Pai</span>
+      </a>
+
+      <a href="pessoas/eu.html"
+         class="family-card"
+         data-aos="fade-up" data-aos-delay="200">
+        <img src="img/pessoas/eu.jpg" alt="Eu">
+        <span>Eu</span>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- JS libs -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

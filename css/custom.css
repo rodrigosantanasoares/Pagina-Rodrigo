@@ -1,0 +1,61 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo animado */
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, #1e3a8a, #9333ea, #0f172a);
+  background-size: 300% 300%;
+  animation: gradientMove 15s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card */
+.family-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.family-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 3px solid rgba(255,255,255,0.4);
+  transition: transform 0.4s ease;
+}
+
+.family-card span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.family-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+
+.family-card:hover img {
+  transform: scale(1.1);
+}
