@@ -3,7 +3,32 @@ AOS.init({
   once: true,
 });
 
-/* Modal da galeria */
+/* Partículas */
+if (document.getElementById('particles-js')) {
+  particlesJS('particles-js', {
+    particles: {
+      number: { value: 70 },
+      color: { value: '#ffffff' },
+      opacity: { value: 0.15 },
+      size: { value: 3 },
+      move: { speed: 1 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#ffffff',
+        opacity: 0.1,
+        width: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: 'repulse' }
+      }
+    }
+  });
+}
+
+/* Modal galeria */
 const modal = document.getElementById('modal');
 const modalImg = document.getElementById('modal-img');
 
